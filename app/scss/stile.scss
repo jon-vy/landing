@@ -1,0 +1,18 @@
+@import "vars"; /* почему без подчёркивания https://youtu.be/1sNhSXgsBPY?t=622 */
+@import "libs"; /* а в имени файла подчёркивание есть */
+@import "fonts";
+@import "global";
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+/* стандартный стиль для адаптивной картинки */
+.header__logo {
+  display: block;
+  max-width: 20%;
+  height: auto;
+}
+@import "media";
+
