@@ -1,18 +1,87 @@
-@import "vars"; /* почему без подчёркивания https://youtu.be/1sNhSXgsBPY?t=622 */
-@import "libs"; /* а в имени файла подчёркивание есть */
+@import "vars";
+
+/* почему без подчёркивания https://youtu.be/1sNhSXgsBPY?t=622 */
+
+@import "libs";
+
+/* а в имени файла подчёркивание есть */
+
 @import "fonts";
 @import "global";
 
-.wrap {
-  max-width: 1100px;
-  margin: 0 auto;
-  border: 1px solid #000;
-}
 /* стандартный стиль для адаптивной картинки */
-.header__logo {
-  display: block;
-  max-width: 20%;
-  height: auto;
-}
-@import "media";
 
+
+/* header */
+
+.header {
+  display: grid;
+  grid-template-columns: 100px minmax(300px, 1fr) max-content;
+  /* grid-template-columns: repeat(auto-fit, minmax(min-content, max-content)); */
+  margin: 20px 0;
+  grid-column-gap: 10px;
+}
+
+.header__logo {
+  width: 100%;
+}
+
+.header__deskr {
+  align-self: center;
+  font-size: 150%;
+}
+
+.header__contact {
+  align-self: center;
+  padding-right: 10px;
+}
+
+
+/* /header */
+
+
+/* section-1 */
+
+.section-1 {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  grid-column-gap: 15px;
+  align-items: center;
+}
+
+.section-1__img {
+  width: 100%;
+}
+
+.slider-arrows {
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.slider-arrows:hover {
+  cursor: pointer;
+}
+
+.slider-arrows__Left {
+  left: 0;
+}
+
+.slider-arrows__Right {
+  right: 0;
+}
+
+.section-1__aside {
+  /* justify-self: center; */
+}
+
+.section-1__button {
+  margin-top: 50px;
+}
+
+
+/* /section-1 */
+
+@import "media";

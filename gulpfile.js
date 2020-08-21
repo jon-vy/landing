@@ -36,7 +36,7 @@ gulp.task('scss', function(){ /* task - задание scss - имя этого 
 gulp.task('css', function() {/* объеденить (конкатинировать) несколько css файлов */
     return gulp.src([
         'node_modules/normalize.css/normalize.css',/* возьмёт */
-        /* 'node_modules/slick-carousel/slick/slick.css', *//* эти   */
+         'node_modules/slick-carousel/slick/slick.css',/* эти   */
         /*'node_modules/magnific-popup/dist/magnific-popup.css' файлы */
         /* 'node_modules/animate.css/animate.css', */
     ])
